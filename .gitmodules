@@ -6,3 +6,7 @@
 	path = mikevu.github.io
 	url = https://github.com/mikeovu/mikevu.github.io.git
 	branch = main
+[submodule "public"]
+	path = public
+	url = https://github.com/mikeovu/mikevu.github.io.git
+	branch = main

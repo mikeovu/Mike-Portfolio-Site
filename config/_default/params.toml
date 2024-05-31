@@ -49,11 +49,11 @@ disableTextInHeader = false
   layoutBackgroundBlur = false # only used when layout equals background
 
 [article]
-  showDate = false
-  showViews = false
+  showDate = true
+  showViews = true
   showLikes = false
-  showDateOnlyInArticle = false
-  showDateUpdated = false
+  showDateOnlyInArticle = true
+  showDateUpdated = true
   showAuthor = true
   # showAuthorBottom = false
   showHero = true

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on Mike Vu</title>
+    <link>http://localhost:1313/tags/azure/</link>
+    <description>Recent content in Azure on Mike Vu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Mike Vu</copyright>
+    <lastBuildDate>Wed, 19 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Configure AzureAD SAML Authentication for AnyConnect VPN on Meraki</title>
+      <link>http://localhost:1313/posts/configuring_anyconnect_azuread_saml/</link>
+      <pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/configuring_anyconnect_azuread_saml/</guid>
+      <description>Configuration steps on AzureAD and Meraki Dashboards # This guide seems redundant, but there are some quirks that are not accounted for in the official Meraki documentation.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/configuring_anyconnect_azuread_saml/feature.svg" />
+    </item>
+    
+  </channel>
+</rss>

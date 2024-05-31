@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meraki on Mike Vu</title>
-    <link>http://localhost:1313/Mike-Portfolio-Site/tags/meraki/</link>
+    <link>//localhost:1313/tags/meraki/</link>
     <description>Recent content in Meraki on Mike Vu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Mike Vu</copyright>
-    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/Mike-Portfolio-Site/tags/meraki/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/meraki/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Python to Convert Meraki MX Firewall Rules into JSON and CSV Files</title>
-      <link>http://localhost:1313/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/</link>
+      <link>//localhost:1313/posts/outputting_firewall_rules_to_dashboard/</link>
       <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/</guid>
+      <guid>//localhost:1313/posts/outputting_firewall_rules_to_dashboard/</guid>
       <description>This tutorial will guide you through the process of using Python to download the Layer 3 and Layer 7 rules from a Meraki MX into a CSV spreadsheet.</description>
       
     </item>
     
     <item>
       <title>How to Configure AzureAD SAML Authentication for AnyConnect VPN on Meraki</title>
-      <link>http://localhost:1313/Mike-Portfolio-Site/posts/configuring_anyconnect_azuread_saml/</link>
+      <link>//localhost:1313/posts/configuring_anyconnect_azuread_saml/</link>
       <pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/Mike-Portfolio-Site/posts/configuring_anyconnect_azuread_saml/</guid>
+      <guid>//localhost:1313/posts/configuring_anyconnect_azuread_saml/</guid>
       <description>Configuration steps on AzureAD and Meraki Dashboards # This guide seems redundant, but there are some quirks that are not accounted for in the official Meraki documentation.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/Mike-Portfolio-Site/posts/configuring_anyconnect_azuread_saml/feature.svg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/posts/configuring_anyconnect_azuread_saml/feature.svg" />
     </item>
     
   </channel>

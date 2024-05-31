@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Mike Vu</title>
-    <link>http://localhost:1313/Mike-Portfolio-Site/tags/python/</link>
+    <link>//localhost:1313/tags/python/</link>
     <description>Recent content in Python on Mike Vu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Mike Vu</copyright>
-    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/Mike-Portfolio-Site/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Python to Convert Meraki MX Firewall Rules into JSON and CSV Files</title>
-      <link>http://localhost:1313/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/</link>
+      <link>//localhost:1313/posts/outputting_firewall_rules_to_dashboard/</link>
       <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/</guid>
+      <guid>//localhost:1313/posts/outputting_firewall_rules_to_dashboard/</guid>
       <description>This tutorial will guide you through the process of using Python to download the Layer 3 and Layer 7 rules from a Meraki MX into a CSV spreadsheet.</description>
       
     </item>

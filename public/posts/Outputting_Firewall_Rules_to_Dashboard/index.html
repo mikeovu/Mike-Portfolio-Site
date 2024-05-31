@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head><script src="/Mike-Portfolio-Site/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=Mike-Portfolio-Site/livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -15,11 +15,9 @@
   <meta name="keywords" content="cisco, networking, Meraki, Python, JSON, " />
   
   
-  <link rel="canonical" href="http://localhost:1313/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/" />
+  <link rel="canonical" href="//localhost:1313/posts/outputting_firewall_rules_to_dashboard/" />
   
-  <link rel="alternate" type="application/rss+xml" href="/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/index.xml" title="Mike Vu" />
-  
-  
+  <link rel="alternate" type="application/rss+xml" href="/posts/outputting_firewall_rules_to_dashboard/index.xml" title="Mike Vu" />
   
   
   
@@ -28,11 +26,13 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/Mike-Portfolio-Site/css/main.bundle.min.5615a487fac507c43511df88c6ad42d8fd2f34979108ea0cb248cba1146fdcb8aad55e5fa3a2d69104e8e06875708d5c066abee2cf0d660691eb2f456d7d9f94.css"
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.5615a487fac507c43511df88c6ad42d8fd2f34979108ea0cb248cba1146fdcb8aad55e5fa3a2d69104e8e06875708d5c066abee2cf0d660691eb2f456d7d9f94.css"
     integrity="sha512-VhWkh/rFB8Q1Ed&#43;Ixq1C2P0vNJeRCOoMskjLoRRv3Liq1V5fo6LWkQTo4Gh1cI1cBmq&#43;4s8NZgaR6y9FbX2flA==" />
   
   
-  <script type="text/javascript" src="/Mike-Portfolio-Site/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
     integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
   
   
@@ -43,18 +43,18 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/Mike-Portfolio-Site/js/main.bundle.min.b36dda9ec4ec11e967fd341e7d57b8c484ac7a39f8f329f7bcf7ce4812569de8607db866a086d4789956ac0b74967e251c9a566d94d469dd28b8787fed4f46f5.js"
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.b36dda9ec4ec11e967fd341e7d57b8c484ac7a39f8f329f7bcf7ce4812569de8607db866a086d4789956ac0b74967e251c9a566d94d469dd28b8787fed4f46f5.js"
     integrity="sha512-s23ansTsEeln/TQefVe4xISsejn48yn3vPfOSBJWnehgfbhmoIbUeJlWrAt0ln4lHJpWbZTUad0ouHh/7U9G9Q==" data-copy="" data-copied=""></script>
   
   
-  <script src="/Mike-Portfolio-Site/js/zoom.min.js"></script>
+  <script src="/js/zoom.min.js"></script>
   
   
   
-  <link rel="apple-touch-icon" sizes="180x180" href="/Mike-Portfolio-Site/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/Mike-Portfolio-Site/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/Mike-Portfolio-Site/favicon-16x16.png" />
-  <link rel="manifest" href="/Mike-Portfolio-Site/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   
   
   
@@ -62,17 +62,17 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/">
+  <meta property="og:url" content="//localhost:1313/posts/outputting_firewall_rules_to_dashboard/">
   <meta property="og:site_name" content="Mike Vu">
   <meta property="og:title" content="Using Python to Convert Meraki MX Firewall Rules into JSON and CSV Files">
   <meta property="og:description" content="How to Use Python to Convert Layer 3 and Layer 7 Firewall Rules from the Meraki Dashboard to JSON and CSV">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="http://localhost:1313/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/feature.png">
+    <meta property="og:image" content="//localhost:1313/posts/outputting_firewall_rules_to_dashboard/feature.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/feature.png">
+  <meta name="twitter:image" content="//localhost:1313/posts/outputting_firewall_rules_to_dashboard/feature.png">
   <meta name="twitter:title" content="Using Python to Convert Meraki MX Firewall Rules into JSON and CSV Files">
   <meta name="twitter:description" content="How to Use Python to Convert Layer 3 and Layer 7 Firewall Rules from the Meraki Dashboard to JSON and CSV">
 
@@ -97,7 +97,7 @@
   
   
 
-<script src="/Mike-Portfolio-Site/lib/jquery/jquery.slim.min.js" integrity=""></script>
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
 
 
 
@@ -149,7 +149,7 @@
         <nav class="flex space-x-3">
 
             
-            <a href="/Mike-Portfolio-Site/" class="text-base font-medium text-gray-500 hover:text-gray-900">Mike Vu</a>
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Mike Vu</a>
             
 
         </nav>
@@ -158,7 +158,7 @@
             
             
             
-  <a href="/Mike-Portfolio-Site/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-base font-medium" title="">
         Home
@@ -168,7 +168,7 @@
 
             
             
-  <a href="/Mike-Portfolio-Site/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-base font-medium" title="">
         About
@@ -178,7 +178,7 @@
 
             
             
-  <a href="/Mike-Portfolio-Site/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-base font-medium" title="">
         Posts
@@ -322,7 +322,7 @@
 
                     
   <li class="mt-1">
-    <a href="/Mike-Portfolio-Site/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="">
             Home
@@ -336,7 +336,7 @@
 
                     
   <li class="mt-1">
-    <a href="/Mike-Portfolio-Site/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="">
             About
@@ -350,7 +350,7 @@
 
                     
   <li class="mt-1">
-    <a href="/Mike-Portfolio-Site/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="">
             Posts
@@ -403,7 +403,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/feature_huf364ee5fdc72e5361e0532a6218413a8_8995_1200x0_resize_box_3.png);">
+    style="background-image:url(/posts/outputting_firewall_rules_to_dashboard/feature_huf364ee5fdc72e5361e0532a6218413a8_8995_1200x0_resize_box_3.png);">
     
 
 
@@ -470,7 +470,7 @@
   
   
   
-  <script type="text/javascript" src="/Mike-Portfolio-Site/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+  <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
   </header>
   <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
     
@@ -672,11 +672,11 @@ l3_rules.close()
         class="my-0 rounded-md"
         loading="lazy"
         srcset="
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_330x0_resize_box_3.png 330w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_660x0_resize_box_3.png 660w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_1024x0_resize_box_3.png 1024w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_1320x0_resize_box_3.png 2x"
-        src="/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_660x0_resize_box_3.png"
+        /posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_330x0_resize_box_3.png 330w,
+        /posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_660x0_resize_box_3.png 660w,
+        /posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_1024x0_resize_box_3.png 1024w,
+        /posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_1320x0_resize_box_3.png 2x"
+        src="/posts/outputting_firewall_rules_to_dashboard/Dashboard_Firewall_Rules_hubbdb71500388d343ae17d7d5209183d0_397942_660x0_resize_box_3.png"
         alt="/IMAGES/Dashboard_Firewall_Rules.png"
       />
       
@@ -728,11 +728,11 @@ l3_rules.close()
         class="my-0 rounded-md"
         loading="lazy"
         srcset="
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_330x0_resize_box_3.png 330w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_660x0_resize_box_3.png 660w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_1024x0_resize_box_3.png 1024w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_1320x0_resize_box_3.png 2x"
-        src="/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_660x0_resize_box_3.png"
+        /posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_330x0_resize_box_3.png 330w,
+        /posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_660x0_resize_box_3.png 660w,
+        /posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_1024x0_resize_box_3.png 1024w,
+        /posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_1320x0_resize_box_3.png 2x"
+        src="/posts/outputting_firewall_rules_to_dashboard/Specify_Organization_hu5a856bf55c2a021de4cd624f45247569_110877_660x0_resize_box_3.png"
         alt="/IMAGES/Specify_Organization.png"
       />
       
@@ -760,11 +760,11 @@ l3_rules.close()
         class="my-0 rounded-md"
         loading="lazy"
         srcset="
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_330x0_resize_box_3.png 330w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_660x0_resize_box_3.png 660w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_1024x0_resize_box_3.png 1024w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_1320x0_resize_box_3.png 2x"
-        src="/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_660x0_resize_box_3.png"
+        /posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_330x0_resize_box_3.png 330w,
+        /posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_660x0_resize_box_3.png 660w,
+        /posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_1024x0_resize_box_3.png 1024w,
+        /posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_1320x0_resize_box_3.png 2x"
+        src="/posts/outputting_firewall_rules_to_dashboard/Specify_Network_hu418c928120a472dd93f7c193adf47beb_135818_660x0_resize_box_3.png"
         alt="/IMAGES/Specify_Network.png"
       />
       
@@ -801,11 +801,11 @@ l3_rules.close()
         class="my-0 rounded-md"
         loading="lazy"
         srcset="
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_330x0_resize_box_3.png 330w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_660x0_resize_box_3.png 660w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_1024x0_resize_box_3.png 1024w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_1320x0_resize_box_3.png 2x"
-        src="/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_660x0_resize_box_3.png"
+        /posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_330x0_resize_box_3.png 330w,
+        /posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_660x0_resize_box_3.png 660w,
+        /posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_1024x0_resize_box_3.png 1024w,
+        /posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_1320x0_resize_box_3.png 2x"
+        src="/posts/outputting_firewall_rules_to_dashboard/firewall_rules_output_hu7357750c44b443b26e4dd283b83b14de_94657_660x0_resize_box_3.png"
         alt="/IMAGES/firewall_rules_output.png"
       />
       
@@ -842,11 +842,11 @@ l3_rules.close()
         class="my-0 rounded-md"
         loading="lazy"
         srcset="
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_330x0_resize_box_3.png 330w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_660x0_resize_box_3.png 660w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_1024x0_resize_box_3.png 1024w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_1320x0_resize_box_3.png 2x"
-        src="/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_660x0_resize_box_3.png"
+        /posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_330x0_resize_box_3.png 330w,
+        /posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_660x0_resize_box_3.png 660w,
+        /posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_1024x0_resize_box_3.png 1024w,
+        /posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_1320x0_resize_box_3.png 2x"
+        src="/posts/outputting_firewall_rules_to_dashboard/L3_Rules_CSV_hu3b6028e7fe99f8c9f853409e61fdec61_73903_660x0_resize_box_3.png"
         alt="/IMAGES/L3_Rules_CSV.png"
       />
       
@@ -871,11 +871,11 @@ l3_rules.close()
         class="my-0 rounded-md"
         loading="lazy"
         srcset="
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_330x0_resize_box_3.png 330w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_660x0_resize_box_3.png 660w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_1024x0_resize_box_3.png 1024w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_1320x0_resize_box_3.png 2x"
-        src="/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_660x0_resize_box_3.png"
+        /posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_330x0_resize_box_3.png 330w,
+        /posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_660x0_resize_box_3.png 660w,
+        /posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_1024x0_resize_box_3.png 1024w,
+        /posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_1320x0_resize_box_3.png 2x"
+        src="/posts/outputting_firewall_rules_to_dashboard/L3_Rules_JSON_hu38a9c94fef97c98521cd7b94053b8122_169219_660x0_resize_box_3.png"
         alt="/IMAGES/L3_Rules_JSON.png"
       />
       
@@ -912,11 +912,11 @@ l3_rules.close()
         class="my-0 rounded-md"
         loading="lazy"
         srcset="
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_330x0_resize_box_3.png 330w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_660x0_resize_box_3.png 660w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_1024x0_resize_box_3.png 1024w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_1320x0_resize_box_3.png 2x"
-        src="/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_660x0_resize_box_3.png"
+        /posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_330x0_resize_box_3.png 330w,
+        /posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_660x0_resize_box_3.png 660w,
+        /posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_1024x0_resize_box_3.png 1024w,
+        /posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_1320x0_resize_box_3.png 2x"
+        src="/posts/outputting_firewall_rules_to_dashboard/L7_Rules_CSV_hu71fd27808629569871984641f78501be_46255_660x0_resize_box_3.png"
         alt="/IMAGES/L7_Rules_CSV.png"
       />
       
@@ -941,11 +941,11 @@ l3_rules.close()
         class="my-0 rounded-md"
         loading="lazy"
         srcset="
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_330x0_resize_box_3.png 330w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_660x0_resize_box_3.png 660w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_1024x0_resize_box_3.png 1024w,
-        /Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_1320x0_resize_box_3.png 2x"
-        src="/Mike-Portfolio-Site/posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_660x0_resize_box_3.png"
+        /posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_330x0_resize_box_3.png 330w,
+        /posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_660x0_resize_box_3.png 660w,
+        /posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_1024x0_resize_box_3.png 1024w,
+        /posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_1320x0_resize_box_3.png 2x"
+        src="/posts/outputting_firewall_rules_to_dashboard/L7_Rules_JSON_hu78f9494319d207e81a245e3c055a7c1c_67135_660x0_resize_box_3.png"
         alt="/IMAGES/L7_Rules_JSON.png"
       />
       
@@ -1018,13 +1018,13 @@ l3_rules.close()
   </script>
   
   
-  <script type="text/javascript" src="/Mike-Portfolio-Site/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
   
   
 </footer><div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/Mike-Portfolio-Site/"
+  data-url="//localhost:1313/"
   style="z-index:500"
 >
   <div

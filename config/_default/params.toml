@@ -50,10 +50,10 @@ disableTextInHeader = false
 
 [article]
   showDate = false
-  showViews = true
+  showViews = false
   showLikes = false
-  showDateOnlyInArticle = true
-  showDateUpdated = true
+  showDateOnlyInArticle = false
+  showDateUpdated = false
   showAuthor = true
   # showAuthorBottom = false
   showHero = true
@@ -90,8 +90,8 @@ disableTextInHeader = false
   showLikes = false
   showTableOfContents = false
   showCards = true
-  groupByYear = true
-  cardView = true
+  groupByYear = false
+  cardView = false
   cardViewScreenWidth = false
   constrainItemsWidth = false
 

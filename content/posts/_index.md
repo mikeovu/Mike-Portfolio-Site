@@ -1,8 +1,8 @@
 ---
-Title: Informational Posts
+Title: Posts & Projects
 layout: background
 ---
 
-Welcome to the posts page! 
+## Welcome! 
 
-Here, you'll find informational guides that I've developed through my technical learning journey.
+In this page, I've added guides for projects I've worked on for learning tech. 

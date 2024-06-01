@@ -4,30 +4,48 @@
 
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/configure_s3_bucket_terraform/</loc>
-    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/posts/learning-terraform/terraform-state/</loc>
+    <lastmod>2024-05-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/learning-terraform/</loc>
+    <lastmod>2024-05-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/learning-terraform/configure_s3_bucket_terraform/</loc>
     <lastmod>2024-05-29T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/outputting_firewall_rules_to_dashboard/</loc>
+    <loc>http://localhost:1313/posts/networking-projects/</loc>
     <lastmod>2024-05-29T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/configuring_anyconnect_azuread_saml/</loc>
+    <loc>http://localhost:1313/posts/networking-projects/outputting_firewall_rules_to_dashboard/</loc>
+    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/networking-projects/configuring_anyconnect_azuread_saml/</loc>
     <lastmod>2023-04-19T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

@@ -11,7 +11,7 @@ layout: background
 ## Professional History
 
 
-I have been an IT professional, specializing in network administration and design for a decade. However, pursuing a career in IT and Network engineering was not my original plan. Here's an abridged version of my journey from political science major to solutions engineer:
+I have been an IT professional, specializing in network administration and design for a decade. Here's an abridged story of how I went from a political science major in college to where I am now:
 
 :school: 2005 - 2009: Majored in Political Science at UCLA and worked as an AV Technician for the student Union. 
 

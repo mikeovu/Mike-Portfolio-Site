@@ -17,9 +17,9 @@ I have been an IT professional, specializing in network administration and desig
 
 ![ucla](ucla.png)
 
-:musical_note: 2006 - 2010: Toured around the country as a drummer in a band and learned the hard way that 
+:musical_note: 2006 - 2010: Toured around the country as a drummer in a band, where I obtained certain skills that would come in handy later in life. Some of the skills included building a social network in the music industry, face to face sales at malls (soliciting our album), and audio visual engineering (live sound and recording). 
 
-:computer: 2011 - 2013: Learned the true value of a degree in political science and used my experience as an AV technician to find a job as a corporate AV technician at companies like AMD and Google. I used every opportunity to learn and gain experience in everything IT - windows/linux administration, virtualization, cloud computing, networking. 
+:computer: 2011 - 2013: Learned the true value of a degree in political science :poop: This meant that I had to leverage my experience as a former college AV tech, as well as the skills I gained as a touring musician to obtain a job in corporate AV support. During my time as a corpoate AV support tech, I learned how to become an IT systems administrator, configuring and troubleshooting media servers, network switches, and end user machines. I eventually landed a job as a contractor at Google, which was a big milestone for me as an IT professional.
 
 ![google](google.webp)
 
@@ -75,6 +75,7 @@ I have been an IT professional, specializing in network administration and desig
 <p><strong>Azure</strong> - The other cloud provider I have experience with.</p>
 </div>
 
+
 ## Certifications
 
 <div>
@@ -88,7 +89,7 @@ I have been an IT professional, specializing in network administration and desig
     </thead>
     <tbody>
         <tr>
-            <td  style="vertical-align: middle !important;" rowspan=1><img class="customEntitityLogo" src="ccna_large.jpg"/></td>
+            <td  style="vertical-align: middle !important;" rowspan=1><img class="customEntitityLogo" src="ccna_large.jpg" alt="Cisco Logo"/></td>
             <td  style="vertical-align: middle !important;" rowspan=1><a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/5EFD2EGHFL1Q1PWQ" target="_blank">Cisco Certified Network Associate (CCNA)</a></td>
             <td style="vertical-align: middle !important;" >Expires 2027</td>
         </tr>

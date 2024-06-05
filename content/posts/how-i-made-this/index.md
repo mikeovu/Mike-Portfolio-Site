@@ -61,7 +61,9 @@ Here's the <a href = "https://www.git-scm.com/docs">official reference page</a> 
 
 **Microsoft Azure has a Service called <a href="https://azure.microsoft.com/en-us/products/app-service/static">Static Web Apps</a>**
 
-I used it because it automatically syncs with your site's Github repo and simplifies the CI/CD workflow.
+![azure static](azure_web_app.jpeg)
+
+It automatically sync's with your site's Github repo and maintains CI/CD via Github actions.
 
 I followed Microsoft's <a href = "https://learn.microsoft.com/en-us/azure/static-web-apps/get-started-portal?tabs=vanilla-javascript&pivots=github">official documentation</a> to learn how to host my site. 
 

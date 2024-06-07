@@ -48,9 +48,8 @@ I used Hugo because it allows you to generate content pages using <a href="https
 
 ## Use Git for version control
 
-I used <a href="https://www.atlassian.com/git/tutorials/what-is-git">`Git`</a> as my version control tool of choice. 
+I used <a href="https://www.atlassian.com/git/tutorials/what-is-git">`Git`</a> as my version control tool.
 
-Needless to say, this keeps everything in sync between my local machine and remote repository.
 
 Here's the <a href = "https://www.git-scm.com/docs">official reference page</a> for `Git`. 
 
@@ -63,11 +62,11 @@ Here's the <a href = "https://www.git-scm.com/docs">official reference page</a> 
 
 ![azure static](azure_web_app.jpeg)
 
-It automatically sync's with your site's Github repo and maintains CI/CD via Github actions.
+It automatically syncs with your site's Github repo and maintains CI/CD using Github actions.
 
 I followed Microsoft's <a href = "https://learn.microsoft.com/en-us/azure/static-web-apps/get-started-portal?tabs=vanilla-javascript&pivots=github">official documentation</a> to learn how to host my site. 
 
-For CI/CD, Azure uses Github Actions. Here is the `YAML` workflow file that it uses: 
+Here is the `YAML` workflow file:
 
 ```
 name: Azure Static Web Apps CI/CD

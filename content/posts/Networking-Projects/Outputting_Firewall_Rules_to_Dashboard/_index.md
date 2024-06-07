@@ -9,6 +9,7 @@ tags: [cisco, networking, Meraki, Python, JSON]
 categories: [Guides]
 ---
 
+<img src = "Meraki-Python-Project.png">
 
 This tutorial will guide you through the process of using Python to download the Layer 3 and Layer 7 rules from a Meraki MX into a CSV spreadsheet. 
 

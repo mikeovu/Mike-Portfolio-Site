@@ -26,13 +26,13 @@ I created my site's repo.
 
 
 
-## Download, Installing, and Using Hugo
+## Downloading, Installing, and Using Hugo
 
 <a href = "https://gohugo.io/"> Hugo</a> is a web framework for building static sites. 
 
 ![Hugo](hugo.png)
 
-It's a great tool for people that don't have the patience for becoming experts in web design, html, and CSS. 
+It's a great tool for people that don't have the patience for traditional web design. 
 
 They have a ton of <a href = "https://themes.gohugo.io/">themes</a> to choose from. 
 
@@ -42,7 +42,7 @@ I used the <a href = "https://blowfish.page/docs/getting-started/">blowfish</a> 
 
 Each theme has its own methods and techniques for customizing and generating content. I spent a lot of time on the <a href = "https://blowfish.page/docs/">blowfish docs</a> to learn. 
 
-**Reason Why I used Hugo?**
+**Why I used Hugo?**
 
 I used Hugo because it allows you to generate content pages using <a href="https://www.markdownguide.org/getting-started/">`Markdown`.</a>
 

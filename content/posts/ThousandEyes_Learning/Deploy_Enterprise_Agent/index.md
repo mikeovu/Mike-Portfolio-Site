@@ -12,7 +12,7 @@ categories: [Guides]
 
 ## Objective
 
-Download the Enterprise Agent Software and import it into the Virtualization Environment.
+Download the Enterprise Agent Software and import it into a Virtualization Environment.
 
 For this lab, I'm installing the enterprise agent on VirtualBox, running on my Intel NUC
 

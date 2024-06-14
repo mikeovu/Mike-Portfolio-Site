@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-# baseURL = "https://your_domain.com/"
+baseURL = "https://mikeavuportfolio.com"
 defaultContentLanguage = "en"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
@@ -14,6 +14,7 @@ summaryLength = 0
 
 buildDrafts = false
 buildFuture = false
+
 
 # googleAnalytics = "G-XXXXXXXXX"
 

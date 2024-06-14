@@ -78,6 +78,7 @@ disableTextInHeader = false
   showWordCount = true
   # sharingLinks = [ "linkedin"]
   showZenMode = false
+ 
 
 [list]
   showHero = true
@@ -101,7 +102,7 @@ disableTextInHeader = false
 [taxonomy]
   showTermCount = true
   showHero = true
-#  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false

@@ -15,6 +15,16 @@
       
       <guid>http://localhost:1313/posts/thousandeyes_learning/page-load/</guid>
       <description>Scheduling a Page Load Web Test # Pre-Requisites # A ThousandEyes Account</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thousandeyes_learning/page-load/feature.png" />
+    </item>
+    
+    <item>
+      <title>Learning ThousandEyes</title>
+      <link>http://localhost:1313/posts/thousandeyes_learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/thousandeyes_learning/</guid>
+      <description></description>
       
     </item>
     

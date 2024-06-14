@@ -35,7 +35,7 @@
       
       <guid>http://localhost:1313/posts/thousandeyes_learning/page-load/</guid>
       <description>Scheduling a Page Load Web Test # Pre-Requisites # A ThousandEyes Account</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thousandeyes_learning/page-load/feature.png" />
     </item>
     
   </channel>

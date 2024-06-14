@@ -9,13 +9,23 @@
     <copyright>© 2024 Mike Vu</copyright>
     <atom:link href="http://localhost:1313/posts/thousandeyes_learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to Install an Enterprise Agent on a VM</title>
+      <link>http://localhost:1313/posts/thousandeyes_learning/deploy_enterprise_agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/thousandeyes_learning/deploy_enterprise_agent/</guid>
+      <description>Deploy Enterprise Agent # Objective # Download the Enterprise Agent Software and import it into the Virtualization Environment.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thousandeyes_learning/deploy_enterprise_agent/feature.jpg" />
+    </item>
+    
+    <item>
       <title>How to Schedule a Page Load Test in ThousandEyes</title>
       <link>http://localhost:1313/posts/thousandeyes_learning/page-load/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/thousandeyes_learning/page-load/</guid>
       <description>Scheduling a Page Load Web Test # Pre-Requisites # A ThousandEyes Account</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thousandeyes_learning/page-load/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thousandeyes_learning/page-load/feature.jpg" />
     </item>
     
   </channel>

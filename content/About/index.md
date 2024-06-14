@@ -5,6 +5,8 @@ sharingLinks: false
 showEdit: false
 draft: false
 layout: background
+heroStyle: "background"
+showHero: true
 ---
 
 ---

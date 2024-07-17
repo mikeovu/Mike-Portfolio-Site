@@ -79,13 +79,23 @@
     </item>
     
     <item>
+      <title>How to Install an Enterprise Agent on a VM</title>
+      <link>http://localhost:1313/posts/thousandeyes_learning/deploy_enterprise_agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/thousandeyes_learning/deploy_enterprise_agent/</guid>
+      <description>Deploy Enterprise Agent # Objective # Download the Enterprise Agent Software and import it into a Virtualization Environment.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thousandeyes_learning/deploy_enterprise_agent/feature.jpg" />
+    </item>
+    
+    <item>
       <title>How to Schedule a Page Load Test in ThousandEyes</title>
       <link>http://localhost:1313/posts/thousandeyes_learning/page-load/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/thousandeyes_learning/page-load/</guid>
       <description>Scheduling a Page Load Web Test # Pre-Requisites # A ThousandEyes Account</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thousandeyes_learning/page-load/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thousandeyes_learning/page-load/feature.jpg" />
     </item>
     
     <item>
@@ -95,6 +105,56 @@
       
       <guid>http://localhost:1313/posts/thousandeyes_learning/</guid>
       <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ThousandEyes Troubleshooting Scenarios</title>
+      <link>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Troubleshooting Lab Scenario A</title>
+      <link>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-a/</guid>
+      <description>Summary # ThousandEyes Dashboard - Troubleshooting Scenario A - Exxon Portal</description>
+      
+    </item>
+    
+    <item>
+      <title>Troubleshooting Lab Scenario B</title>
+      <link>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-b/</guid>
+      <description>Summary # Troubleshooting Scenario B - GoToMeeting</description>
+      
+    </item>
+    
+    <item>
+      <title>Troubleshooting Lab Scenario C</title>
+      <link>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-c/</guid>
+      <description>Summary # Troubleshooting Scenario C - IRS</description>
+      
+    </item>
+    
+    <item>
+      <title>Troubleshooting Lab Scenario D</title>
+      <link>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-d/</guid>
+      <description>Summary # Troubleshooting Scenario D</description>
       
     </item>
     

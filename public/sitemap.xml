@@ -61,12 +61,42 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/posts/thousandeyes_learning/deploy_enterprise_agent/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/posts/thousandeyes_learning/page-load/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/posts/thousandeyes_learning/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-a/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-b/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-c/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/thousandeyes_learning/troubleshooting-labs/tshoot-scenario-d/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

@@ -1,6 +1,6 @@
 ---
-Title: Network Automation and Configuration Projects
+Title: Network Automation and Security Projects
 layout: background
-tags: [Network Administration, Meraki, Python, Azure, SAML]
+tags: [Network Administration, Network Security, Proxy, Meraki, Python, Azure, SAML]
 categories: [Guides]
 ---

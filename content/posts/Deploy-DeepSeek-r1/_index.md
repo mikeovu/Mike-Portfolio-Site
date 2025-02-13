@@ -62,19 +62,19 @@ Follow the steps:
 
 I ran the commands in PowerShell:
 
-<img src = "images/docker_commands.png">
+<img src = "docker_commands.png">
 
 From your machine, open `Windows Features` and ensure to click the checkbox next to `Virtual Machine Platform`
 
-<img src = "images/windows_features.png">
+<img src = "windows_features.png">
 
 You will then open `Docker Desktop` to verify that the interface is running:
 
-<img src = "images/docker_verify.png">
+<img src = "docker_verify.png">
 
 From `Docker`, you can launch the UI or open a web browser and type in `localhost:3000/auth`
 
-<img src = "images/deepseek_ui.png">
+<img src = "deepseek_ui.png">
 
 Congratulations, you are now running DeepSeek r1 locally. Feel free to shut off your NIC to test this out in offline mode.
 

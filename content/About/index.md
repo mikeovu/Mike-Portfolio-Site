@@ -92,7 +92,7 @@ I have been an IT professional, specializing in network administration and desig
     <tbody>
          <tr>
             <td style="vertical-align: middle !important;"  rowspan=1><img class="customEntitityLogo" src="zscaler-zero-trust-certified-associate.png"/></td>
-            <td  style="vertical-align: middle !important;" rowspan=1><a href=" https://verify.skilljar.com/c/gyntwfp8zexf" target="_blank">Zscaler Zero Trust Certified Associate</a></td>
+            <td  style="vertical-align: middle !important;" rowspan=1><a href="https://verify.skilljar.com/c/gyntwfp8zexf" target="_blank">Zscaler Zero Trust Certified Associate</a></td>
             <td  style="vertical-align: middle !important;" rowspan=1>Cert No: gyntwfp8zexf</td>
             <td style="vertical-align: middle !important;" >Expires 2027</td>
         </tr>

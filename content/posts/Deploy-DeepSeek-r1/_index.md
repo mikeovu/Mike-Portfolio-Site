@@ -5,7 +5,6 @@ description: Deploying deepseek locally
 tags: [AI, LLM, DeepSeek]
 categories: [Guides]
 ---
-# How to deploy DeepSeek r1 locally
 
 This is a quick tutorial on how to deploy DeepSeek on a local machine. I'm running this on Windows, but you can run it on MacOS or Linux
 

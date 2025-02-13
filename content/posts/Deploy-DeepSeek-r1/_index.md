@@ -51,7 +51,7 @@ You will now issue your prompts from the CLI.
 
 We will now use Docker to run our fancy LLM UI. 
 
-Download and install <a href = "https://docker.com> docker </a>. Make sure to set up Docker Desktop. 
+Download and install <a href = "https://docker.com"> docker </a>. Make sure to set up Docker Desktop. 
 
 Navigate to this page to <a href = "https://docs.openwebui.com/getting-started/quick-start/"> openwebui page </a> for the relevant docker command. 
 

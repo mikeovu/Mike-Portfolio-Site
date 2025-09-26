@@ -1,3 +1,13 @@
+---
+title: "Fundamentals of AI"
+subtitle: ""
+date: 2025-09-25
+draft: false
+author: "Mike Vu"
+description: "Fundamentals of AI"
+tags: [Hack the Box, AI, Machine Learning, Cybersecurity]
+categories: [Guides]
+---
 # Fundamentals of AI
 
 # Artificial Intelligence

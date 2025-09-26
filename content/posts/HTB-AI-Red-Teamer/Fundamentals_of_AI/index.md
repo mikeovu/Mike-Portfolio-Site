@@ -2,7 +2,7 @@
 
 # Artificial Intelligence
 
-![image.png](Fundamentals%20of%20AI%20278067c5c83d80c89523cb878f7a1904/image.png)
+<img src = "image.png">
 
 `Artificial Intelligence` (`AI`) is a broad field focused on developing intelligent systems capable of performing tasks that typically require human intelligence:
 

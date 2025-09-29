@@ -10,11 +10,11 @@ categories: [Guides]
 ---
 # Fundamentals of AI
 
-# Artificial Intelligence
+## Artificial Intelligence
 
 <img src = "image.png">
 
-# Artificial Intelligence (`AI`) is a broad field focused on developing intelligent systems capable of performing tasks that typically require human intelligence:
+Artificial Intelligence (`AI`) is a broad field focused on developing intelligent systems capable of performing tasks that typically require human intelligence:
 
 - Understanding natural language,
 - Recognizing objects,
@@ -39,7 +39,7 @@ One of the primary goals of `AI` is to augment human capabilities, not just re
 - In [finance](https://youtu.be/PjSAmUMxkrs), `AI` detects fraudulent transactions and optimizes investment strategies.
 - In [cybersecurity](https://www.youtube.com/watch?v=YWGZ12ohMJU), `AI` identifies and mitigates cyber threats.
 
-# Machine Learning (ML)
+## Machine Learning (ML)
 
 `Machine Learning` (`ML`) is a subfield of AI that focuses on enabling systems to learn from data and improve their performance on specific tasks without explicit programming. ML algorithms use statistical techniques to identify patterns, trends, and anomalies within datasets, allowing the system to make predictions, decisions, or classifications based on new input data.
 
@@ -70,7 +70,7 @@ ML has a wide range of applications across various industries, including:
 
 ML is a rapidly evolving field with new algorithms, techniques, and applications emerging. It is a crucial enabler of AI, providing the learning and adaptation capabilities that underpin many intelligent systems.
 
-# Deep Learning (DL)
+## Deep Learning (DL)
 
 `Deep Learning` (`DL`) is a subfield of ML that uses **neural networks** with multiple layers to learn and extract features from complex data. These deep neural networks can automatically identify intricate patterns and representations within large datasets, making them particularly powerful for tasks involving unstructured or high-dimensional data, such as images, audio, and text.
 
@@ -93,7 +93,7 @@ DL has revolutionized many areas of AI, achieving state-of-the-art performance i
 - `Speech Recognition`: Transcribing audio to text, speech synthesis
 - `Reinforcement Learning`: Training agents for complex tasks like playing games and controlling robots
 
-# The Relationship Between AI, ML, and DL
+## The Relationship Between AI, ML, and DL
 
 `Machine Learning` (`ML`) and `Deep Learning` (`DL`) are subfields of `Artificial Intelligence` (`AI`) that enable systems to learn from data and make intelligent decisions. 
 
@@ -109,40 +109,40 @@ Examples of use cases:
 - In `Autonomous Driving`, a combination of `ML` and `DL` techniques processes sensor data, recognizes objects, and makes real-time decisions, enabling vehicles to navigate safely.
 - In `Robotics`, reinforcement learning algorithms, often enhanced with `DL`, train robots to perform complex tasks in dynamic environments.
 
-# Mathematics Refresher for AI
+## Mathematics Refresher for AI
 
-## Multiplication (`*`)
+### Multiplication (`*`)
 
 The `multiplication operator` denotes the product of two numbers or expressions.
 
 `3 * 4 = 12`
 
-## Division(`/`)
+### Division(`/`)
 
 The `division operator` denotes dividing one number or expression by another. 
 
 `10 / 2 = 5` 
 
-## Addition (`+`)
+### Addition (`+`)
 
 The `addition operator` represents the sum of two or more numbers or expressions.
 
 `5 + 3 = 8` 
 
-## Subtraction (`-`)
+### Subtraction (`-`)
 
 The `subtraction operator` represents the difference between two numbers or expressions. 
 
 `9 - 4 = 5` 
 
-## Algebraic Notations (`x_t`)
+### Algebraic Notations (`x_t`)
 
 The subscript notation represents a variable indexed by `t,` often indicating a specific time step or state in a sequence.
 `x_t = q(x_t | x_{t-2})` 
 
 This notation is commonly used in sequences and time series data, where each `x_t` represents the value of `x` at time `t`.
 
-## Superscript Notation (**`x^n` )**
+### Superscript Notation (**`x^n` )**
 
 Superscript notation is used to denote exponents or powers.
 
@@ -150,7 +150,7 @@ Superscript notation is used to denote exponents or powers.
 
 This notation is used in polynomial expressions and exponential functions.
 
-## Norm (**`||...||` )**
+### Norm (**`||...||` )**
 
 The `norm` measures the size or length of a vector. The most common norm is the Euclidean norm, which is calculated as follows:
 `||v|| = sqrt{v_1^2 + v_2^2 + ... + v_n^2}`
@@ -164,7 +164,7 @@ Other norms include the `L1 norm` (Manhattan distance) and the `L∞ norm` (
 
 Norms are used in various applications, such as measuring the distance between vectors, regularizing models to prevent overfitting, and normalizing data.
 
-## Summation Symbol (**`Σ` )**
+### Summation Symbol (**`Σ` )**
 
 The summation symbol indicates the sum of a sequence of terms.
 
@@ -172,7 +172,7 @@ The summation symbol indicates the sum of a sequence of terms.
 
 This represents the sum of the terms `a_1, a_2, ..., a_n`. Summation is used in many mathematical formulas, including calculating means, variances, and series.
 
-# Logarithms and Exponentials
+## Logarithms and Exponentials
 
 ### **Logarithm Base 2 (`log2(x)`)**
 
@@ -226,7 +226,7 @@ Code: python
 
 This function is used in computer science, particularly in binary representations and information theory.
 
-# **Matrix and Vector Operations**
+## **Matrix and Vector Operations**
 
 ### **Matrix-Vector Multiplication (`A * v`)**
 
@@ -310,7 +310,7 @@ tr(A) = 1 + 4 = 5
 
 The trace is used in various matrix properties and in calculating eigenvalues.
 
-# **Set Theory**
+## **Set Theory**
 
 ### **Cardinality (`|S|`)**
 
@@ -368,7 +368,7 @@ A^c = {4, 5}
 
 The complement is used in set operations, probability calculations, and various logical operations.
 
-# **Comparison Operators**
+## **Comparison Operators**
 
 ### **Greater Than or Equal To (`>=`)**
 
@@ -414,7 +414,7 @@ a != b
 
 ```
 
-# **Eigenvalues and Scalars**
+## **Eigenvalues and Scalars**
 
 ### **Lambda (Eigenvalue) (`λ`)**
 
@@ -442,7 +442,7 @@ A * v = λ * v
 
 Eigenvectors are used to understand the directions of maximum variance in data, dimensionality reduction techniques like PCA, and various machine learning algorithms.
 
-# **Functions and Operators**
+## **Functions and Operators**
 
 ### **Maximum Function (`max(...)`)**
 
@@ -496,7 +496,7 @@ a_1 + a_2 + ... + a_n
 
 The ellipsis is used in mathematical notation to represent sequences and series.
 
-# **Functions and Probability**
+## **Functions and Probability**
 
 ### **Function Notation (`f(x)`)**
 

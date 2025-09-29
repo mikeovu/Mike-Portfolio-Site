@@ -14,7 +14,7 @@ categories: [Guides]
 
 <img src = "image.png">
 
-`Artificial Intelligence` (`AI`) is a broad field focused on developing intelligent systems capable of performing tasks that typically require human intelligence:
+# Artificial Intelligence (`AI`) is a broad field focused on developing intelligent systems capable of performing tasks that typically require human intelligence:
 
 - Understanding natural language,
 - Recognizing objects,
@@ -22,7 +22,7 @@ categories: [Guides]
 - Solving problems
 - Learning from experience.
 
-`AI` systems exhibit **cognitive abilities** like **reasoning, perception, and problem-solving** across various domains:
+## `AI` systems exhibit **cognitive abilities** like **reasoning, perception, and problem-solving** across various domains:
 
 - `Natural Language Processing` (`NLP`): Enabling computers to understand, interpret, and generate human language.
 - `Computer Vision`: Allowing computers to "see" and interpret images and videos.
@@ -41,7 +41,7 @@ One of the primary goals of `AI` is to augment human capabilities, not just re
 
 # Machine Learning (ML)
 
-`Machine Learning` (`ML`) is a subfield of AI that focuses on enabling systems to learn from data and improve their performance on specific tasks without explicit programming. ML algorithms use statistical techniques to identify patterns, trends, and anomalies within datasets, allowing the system to make predictions, decisions, or classifications based on new input data.
+## `Machine Learning` (`ML`) is a subfield of AI that focuses on enabling systems to learn from data and improve their performance on specific tasks without explicit programming. ML algorithms use statistical techniques to identify patterns, trends, and anomalies within datasets, allowing the system to make predictions, decisions, or classifications based on new input data.
 
 ML can be categorized into three main types:
 
@@ -72,7 +72,7 @@ ML is a rapidly evolving field with new algorithms, techniques, and applications
 
 # Deep Learning (DL)
 
-`Deep Learning` (`DL`) is a subfield of ML that uses **neural networks** with multiple layers to learn and extract features from complex data. These deep neural networks can automatically identify intricate patterns and representations within large datasets, making them particularly powerful for tasks involving unstructured or high-dimensional data, such as images, audio, and text.
+## `Deep Learning` (`DL`) is a subfield of ML that uses **neural networks** with multiple layers to learn and extract features from complex data. These deep neural networks can automatically identify intricate patterns and representations within large datasets, making them particularly powerful for tasks involving unstructured or high-dimensional data, such as images, audio, and text.
 
 Key characteristics of DL include:
 
@@ -97,12 +97,12 @@ DL has revolutionized many areas of AI, achieving state-of-the-art performance i
 
 `Machine Learning` (`ML`) and `Deep Learning` (`DL`) are subfields of `Artificial Intelligence` (`AI`) that enable systems to learn from data and make intelligent decisions. 
 
-`ML` algorithms, including `DL` algorithms, allow machines to learn from data, recognize patterns, and make decisions. The various types of `ML`, such as **supervised, unsupervised, and reinforcement learning**, each contribute to achieving `AI`'s broader goals. For instance:
+## `ML` algorithms, including `DL` algorithms, allow machines to learn from data, recognize patterns, and make decisions. The various types of `ML`, such as **supervised, unsupervised, and reinforcement learning**, each contribute to achieving `AI`'s broader goals. For instance:
 
 - In `Computer Vision`, supervised learning algorithms and [`Deep Convolutional Neural Networks`](https://www.sciencedirect.com/topics/computer-science/deep-convolutional-neural-networks) (`CNNs`) enable machines to "see" and interpret images accurately.
 - In `Natural Language Processing` (`NLP`), traditional `ML` algorithms and advanced `DL` models like transformers allow for understanding and generating human language, enabling applications like chatbots and translation services.
 
-`DL` has significantly enhanced the capabilities of `ML` by providing powerful tools for feature extraction and representation learning, particularly in domains with complex, unstructured data.
+## `DL` has significantly enhanced the capabilities of `ML` by providing powerful tools for feature extraction and representation learning, particularly in domains with complex, unstructured data.
 
 Examples of use cases:
 

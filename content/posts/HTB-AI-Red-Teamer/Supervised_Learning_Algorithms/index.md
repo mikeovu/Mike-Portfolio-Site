@@ -103,7 +103,7 @@ For example, inference might involve determining which features are most importa
 
 # Linear Regression
 
-![image.png](Supervised%20Learning%20Algorithms%2027a067c5c83d80d79318df84791c0a28/image.png)
+![image.png](image.png)
 
 `Linear Regression` is a fundamental `supervised learning` algorithm that predicts a continuous target variable by establishing a linear relationship between the target and one or more predictor variables. 
 

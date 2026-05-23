@@ -2,9 +2,9 @@
 import ThemeToggle from './ThemeToggle.astro';
 
 const navLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Professional Experience', href: '/about/' },
-  { label: 'Projects and Posts', href: '/posts/' },
+  { label: 'Home', shortLabel: 'Home', href: '/' },
+  { label: 'Professional Experience', shortLabel: 'Experience', href: '/about/' },
+  { label: 'Projects and Posts', shortLabel: 'Posts', href: '/posts/' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -19,12 +19,13 @@ const currentPath = Astro.url.pathname;
       {navLinks.map(link => (
         <a href={link.href}
            class:list={[
-             'px-3 py-1.5 rounded-lg text-sm font-medium transition-colors',
+             'px-2 py-1.5 sm:px-3 rounded-lg text-xs sm:text-sm font-medium transition-colors',
              currentPath === link.href || currentPath.startsWith(link.href === '/' ? '/~NOMATCH~' : link.href)
                ? 'bg-neutral-200 dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100'
                : 'hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-600 dark:text-neutral-300'
            ]}>
-          {link.label}
+          <span class="sm:hidden">{link.shortLabel}</span>
+          <span class="hidden sm:inline">{link.label}</span>
         </a>
       ))}
 

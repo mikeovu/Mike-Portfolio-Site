@@ -1,0 +1,73 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import PostLayout from '@/layouts/PostLayout.astro';
+import SectionLayout from '@/layouts/SectionLayout.astro';
+import { resolveHeroImage } from '@/lib/heroImage';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+  return allPosts.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry, allPosts },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<'posts'>;
+  allPosts: CollectionEntry<'posts'>[];
+}
+
+const { entry, allPosts } = Astro.props;
+const { Content, headings } = await entry.render();
+
+const {
+  title,
+  description,
+  date,
+  author,
+  tags = [],
+  isSection,
+} = entry.data;
+
+const heroImage = resolveHeroImage(entry);
+
+// Reading time estimate
+const wordCount = entry.body.split(/\s+/).length;
+const readingTime = Math.max(1, Math.ceil(wordCount / 200));
+
+// Direct children for section pages: slug is exactly one segment deeper
+const slugParts = entry.slug.split('/');
+const directChildren = isSection
+  ? allPosts.filter(p => {
+      const childParts = p.slug.split('/');
+      return (
+        childParts.length === slugParts.length + 1 &&
+        p.slug.startsWith(entry.slug + '/')
+      );
+    })
+  : [];
+---
+
+{isSection ? (
+  <SectionLayout
+    title={title}
+    description={description}
+    heroImage={heroImage}
+    children={directChildren}
+  >
+    <Content />
+  </SectionLayout>
+) : (
+  <PostLayout
+    title={title}
+    description={description}
+    date={date}
+    author={author}
+    tags={tags}
+    heroImage={heroImage}
+    headings={headings}
+    readingTime={readingTime}
+  >
+    <Content />
+  </PostLayout>
+)}

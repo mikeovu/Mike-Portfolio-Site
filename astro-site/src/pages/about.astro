@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import HeroBackground from '@/components/HeroBackground.astro';
+
+const aboutEntries = await getCollection('about');
+const about = aboutEntries[0];
+const { Content } = await about.render();
+---
+<Base title="About Me" description="About Mike Vu — Solutions Engineer">
+  <HeroBackground image="/images/Mountain-HQ.jpg" title="About Me" />
+
+  <div class="max-w-3xl mx-auto px-4 py-10">
+    <div class="prose prose-neutral dark:prose-invert max-w-none
+                prose-a:text-primary-600 dark:prose-a:text-primary-400
+                prose-img:rounded-lg prose-img:max-w-sm prose-img:mx-auto
+                prose-table:text-sm">
+      <Content />
+    </div>
+  </div>
+</Base>

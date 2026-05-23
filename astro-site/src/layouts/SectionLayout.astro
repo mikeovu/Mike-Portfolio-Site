@@ -1,0 +1,42 @@
+---
+import Base from './Base.astro';
+import HeroBackground from '@/components/HeroBackground.astro';
+import PostCard from '@/components/PostCard.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  title: string;
+  description?: string;
+  heroImage?: string;
+  children: CollectionEntry<'posts'>[];
+}
+
+const { title, description, heroImage, children } = Astro.props;
+
+// Sort children: sections first, then by date descending
+const sorted = [...children].sort((a, b) => {
+  if (a.data.isSection !== b.data.isSection) return a.data.isSection ? -1 : 1;
+  const aDate = a.data.date?.getTime() ?? 0;
+  const bDate = b.data.date?.getTime() ?? 0;
+  return bDate - aDate;
+});
+---
+<Base title={title} description={description}>
+  <HeroBackground image={heroImage} title={title} />
+
+  <div class="max-w-5xl mx-auto px-4 py-10">
+    {Astro.slots.has('default') && (
+      <div class="prose dark:prose-invert max-w-2xl mb-10">
+        <slot />
+      </div>
+    )}
+
+    {sorted.length > 0 ? (
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {sorted.map(post => <PostCard post={post} />)}
+      </div>
+    ) : (
+      <p class="text-neutral-500 dark:text-neutral-400">No posts yet.</p>
+    )}
+  </div>
+</Base>

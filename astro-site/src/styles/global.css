@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 248 250 252;
+    --fg: 15 23 42;
+  }
+  .dark {
+    --bg: 15 23 42;
+    --fg: 241 245 249;
+  }
+  body {
+    @apply bg-[rgb(var(--bg))] text-[rgb(var(--fg))] transition-colors duration-200;
+  }
+  /* Ensure images in posts don't overflow */
+  .prose img {
+    @apply rounded-lg max-w-full;
+  }
+  /* Inline code styling */
+  .prose code:not(pre code) {
+    @apply bg-neutral-100 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+  /* Remove backtick quotes Tailwind Typography adds */
+  .prose code::before,
+  .prose code::after {
+    content: '';
+  }
+}

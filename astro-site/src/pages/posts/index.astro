@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import HeroBackground from '@/components/HeroBackground.astro';
+import PostCard from '@/components/PostCard.astro';
+
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+
+const hidden = new Set(['htb-ai-red-teamer', 'learning-terraform', 'thousandeyes_learning', 'how-i-made-this']);
+
+// Show only top-level entries (slug has no slash = one path segment)
+const topLevel = allPosts
+  .filter(p => !p.slug.includes('/') && !hidden.has(p.slug))
+  .sort((a, b) => {
+    // Sections first, then by date descending
+    if (a.data.isSection !== b.data.isSection) return a.data.isSection ? -1 : 1;
+    const aDate = a.data.date?.getTime() ?? 0;
+    const bDate = b.data.date?.getTime() ?? 0;
+    return bDate - aDate;
+  });
+---
+<Base title="Posts & Projects" description="Guides and projects by Mike Vu">
+  <HeroBackground image="/images/Mountain-HQ.jpg" title="Posts & Projects" />
+
+  <div class="max-w-5xl mx-auto px-4 py-10">
+    <p class="text-neutral-500 dark:text-neutral-400 mb-8 max-w-2xl">
+      Guides for projects I've worked on for learning tech.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {topLevel.map(post => <PostCard post={post} />)}
+    </div>
+  </div>
+</Base>

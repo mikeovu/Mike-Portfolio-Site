@@ -1,0 +1,120 @@
+---
+---
+<div id="search-modal"
+     class="hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-start justify-center pt-20 px-4"
+     role="dialog" aria-modal="true" aria-label="Search">
+  <div class="w-full max-w-xl bg-white dark:bg-neutral-900 rounded-xl shadow-2xl overflow-hidden border border-neutral-200 dark:border-neutral-700">
+    <div class="flex items-center px-4 border-b border-neutral-200 dark:border-neutral-700">
+      <svg class="w-5 h-5 text-neutral-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search posts..."
+        autocomplete="off"
+        class="w-full px-3 py-4 text-base bg-transparent outline-none text-neutral-900 dark:text-neutral-100 placeholder-neutral-400"
+      />
+      <kbd class="hidden sm:inline-flex shrink-0 text-xs text-neutral-400 border border-neutral-200 dark:border-neutral-700 rounded px-1.5 py-0.5">Esc</kbd>
+    </div>
+    <ul id="search-results" class="max-h-80 overflow-y-auto divide-y divide-neutral-100 dark:divide-neutral-800 empty:hidden"></ul>
+    <p id="search-empty" class="hidden px-4 py-6 text-neutral-400 text-sm text-center">No results found.</p>
+    <p id="search-hint" class="px-4 py-3 text-xs text-neutral-400 border-t border-neutral-100 dark:border-neutral-800">
+      Type to search across all posts
+    </p>
+  </div>
+</div>
+
+<script>
+  import Fuse from 'fuse.js';
+
+  interface SearchEntry {
+    url: string;
+    title: string;
+    description: string;
+    tags: string[];
+  }
+
+  let fuse: Fuse<SearchEntry> | null = null;
+
+  async function initSearch() {
+    if (fuse) return;
+    const res = await fetch('/search.json');
+    const data: SearchEntry[] = await res.json();
+    fuse = new Fuse(data, {
+      keys: [
+        { name: 'title', weight: 0.6 },
+        { name: 'description', weight: 0.3 },
+        { name: 'tags', weight: 0.1 },
+      ],
+      threshold: 0.4,
+      includeScore: true,
+    });
+  }
+
+  const modal = document.getElementById('search-modal')!;
+  const input = document.getElementById('search-input') as HTMLInputElement;
+  const resultsList = document.getElementById('search-results')!;
+  const emptyMsg = document.getElementById('search-empty')!;
+  const hintMsg = document.getElementById('search-hint')!;
+
+  async function openSearch() {
+    await initSearch();
+    modal.classList.remove('hidden');
+    input.focus();
+    input.select();
+  }
+
+  function closeSearch() {
+    modal.classList.add('hidden');
+    input.value = '';
+    resultsList.innerHTML = '';
+    emptyMsg.classList.add('hidden');
+    hintMsg.classList.remove('hidden');
+  }
+
+  document.getElementById('search-open')?.addEventListener('click', openSearch);
+
+  modal.addEventListener('click', e => {
+    if (e.target === modal) closeSearch();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { closeSearch(); return; }
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearch();
+    }
+  });
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim();
+    if (!fuse || !q) {
+      resultsList.innerHTML = '';
+      emptyMsg.classList.add('hidden');
+      hintMsg.classList.remove('hidden');
+      return;
+    }
+
+    hintMsg.classList.add('hidden');
+    const results = fuse.search(q).slice(0, 8);
+
+    if (results.length === 0) {
+      resultsList.innerHTML = '';
+      emptyMsg.classList.remove('hidden');
+      return;
+    }
+
+    emptyMsg.classList.add('hidden');
+    resultsList.innerHTML = results.map(({ item }) => `
+      <li>
+        <a href="${item.url}"
+           class="flex flex-col px-4 py-3 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">
+          <span class="font-medium text-neutral-900 dark:text-neutral-100 text-sm">${item.title}</span>
+          ${item.description ? `<span class="text-xs text-neutral-400 truncate mt-0.5">${item.description}</span>` : ''}
+        </a>
+      </li>
+    `).join('');
+  });
+</script>

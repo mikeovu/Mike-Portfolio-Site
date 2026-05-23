@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+
+const tagMap = new Map<string, number>();
+posts.forEach(p =>
+  p.data.tags.forEach(tag => {
+    const key = tag.toLowerCase();
+    tagMap.set(key, (tagMap.get(key) ?? 0) + 1);
+  })
+);
+
+const tags = [...tagMap.entries()].sort(([a], [b]) => a.localeCompare(b));
+---
+<Base title="Tags">
+  <div class="max-w-4xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold mb-8">Tags</h1>
+    <div class="flex flex-wrap gap-3">
+      {tags.map(([tag, count]) => (
+        <a href={`/tags/${encodeURIComponent(tag)}/`}
+           class="px-4 py-2 bg-neutral-100 dark:bg-neutral-800 hover:bg-primary-100 dark:hover:bg-primary-900/30 text-neutral-700 dark:text-neutral-300 hover:text-primary-700 dark:hover:text-primary-300 rounded-full transition-colors text-sm font-medium">
+          {tag}
+          <span class="ml-1.5 text-neutral-400 text-xs">({count})</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

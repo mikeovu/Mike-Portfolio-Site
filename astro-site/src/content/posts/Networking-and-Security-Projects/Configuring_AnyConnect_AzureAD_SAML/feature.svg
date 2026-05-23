@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon-auto-vpn-lock_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#67B346;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#404241;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<path id="background" class="st0" d="M24,0h152c13.3,0,24,10.7,24,24v152c0,13.3-10.7,24-24,24H24c-13.3,0-24-10.7-24-24V24
+	C0,10.7,10.7,0,24,0z"/>
+<path id="shield" class="st1" d="M86.3,95.4v-10c-0.2-7.2,5.5-13.2,12.7-13.4c7.2-0.2,13.2,5.5,13.4,12.7c0,0.2,0,0.5,0,0.7v10
+	 M80.9,109.3c0,10.2,8.3,18.5,18.5,18.5c0.4,0,0.8,0,1.2,0c9.8-0.6,17.3-9.2,17.3-19.1V97.5c0-1.2-1-2.1-2.1-2.1H83.1
+	c-1.2,0-2.1,1-2.1,2.1V109.3z M99.4,104.7v12.2"/>
+<path id="lines" class="st2" d="M175,100c0,41.4-33.6,75-75,75s-75-33.6-75-75s33.6-75,75-75S175,58.6,175,100z M72,61.9L53,94.8
+	 M119,56.7H81 M147,94.8l-19-32.9 M128,138.1l19-32.9 M81,143.3h38 M53,105.2l19,32.9 M128,148.5l9.5,16.5 M72,51.5L62.5,35
+	 M72,148.5L62.5,165 M137.5,35L128,51.5 M44,100H25 M175,100h-19"/>
+<path id="dots" class="st2" d="M81,56.7c0,3.3-2.7,6-6,6s-6-2.7-6-6s2.7-6,6-6S81,53.4,81,56.7z M125,50.7c-3.3,0-6,2.7-6,6
+	s2.7,6,6,6s6-2.7,6-6S128.3,50.7,125,50.7z M150,94c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S153.3,94,150,94z M50,94c-3.3,0-6,2.7-6,6
+	s2.7,6,6,6s6-2.7,6-6S53.3,94,50,94z M75,137.3c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S78.3,137.3,75,137.3z M125,137.3
+	c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S128.3,137.3,125,137.3z"/>
+</svg>

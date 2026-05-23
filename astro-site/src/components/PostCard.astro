@@ -1,0 +1,65 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const { title, description, date, tags, isSection } = post.data;
+const url = `/posts/${post.slug}/`;
+
+// Find a co-located feature image if it exists
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/content/posts/**/{feature.jpg,feature.jpeg,feature.png,feature.svg}',
+  { eager: true }
+);
+const dir = post.id.split('/').slice(0, -1).join('/');
+let featureSrc: string | undefined;
+for (const ext of ['jpg', 'jpeg', 'png', 'svg']) {
+  const key = `/src/content/posts/${dir}/feature.${ext}`;
+  if (images[key]) {
+    featureSrc = images[key].default.src ?? (images[key].default as unknown as string);
+    break;
+  }
+}
+---
+<a href={url}
+   class="group flex flex-col rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 hover:border-primary-400 dark:hover:border-primary-600 transition-all hover:shadow-md dark:hover:shadow-neutral-900">
+  {featureSrc && (
+    <div class="h-40 overflow-hidden">
+      <img src={featureSrc} alt={title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+    </div>
+  )}
+  <div class="p-5 flex flex-col flex-1">
+    <div class="flex items-start gap-2 mb-2">
+      {isSection && (
+        <span class="shrink-0 text-xs bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-2 py-0.5 rounded-full">Series</span>
+      )}
+      <h2 class="text-base font-semibold group-hover:text-primary-500 dark:group-hover:text-primary-400 transition-colors line-clamp-2 leading-snug">
+        {title}
+      </h2>
+    </div>
+
+    {description && (
+      <p class="text-sm text-neutral-500 dark:text-neutral-400 line-clamp-3 flex-1 mb-3">{description}</p>
+    )}
+
+    <div class="flex items-center justify-between mt-auto pt-2">
+      {date ? (
+        <time class="text-xs text-neutral-400">
+          {date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+        </time>
+      ) : <span />}
+      {tags?.length > 0 && (
+        <div class="flex flex-wrap gap-1 justify-end">
+          {tags.slice(0, 3).map(tag => (
+            <span class="text-xs bg-neutral-100 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400 px-2 py-0.5 rounded-full">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</a>

@@ -8,7 +8,7 @@ categories: [Guides]
 
 This is a quick tutorial on how to deploy DeepSeek on a local machine. I'm running this on Windows, but you can run it on MacOS or Linux
 
-<img src = "deploy_deepseek_locally.png">
+![DeepSeek local deployment overview](./deploy_deepseek_locally.png)
 
 ## Download Ollama
 
@@ -16,11 +16,11 @@ Ollama is an open-source project that serves as a powerful and user-friendly pla
 
 Navigate to https://ollama.com
 
-<img src = "ollama.png">
+![Ollama website](./ollama.png)
 
 Download Ollama
 
-<img src = "ollama_download.png">
+![Ollama download](./ollama_download.png)
 
 Once downloaded, locate the executable and run through the install prompts to complete the installation.
 
@@ -32,7 +32,7 @@ Since we do not have an expensive AI server, we will be using the 7 billion para
 
 *For more information on LLM sizes, you refer to this <a href = "https://web.dev/articles/llm-sizes"> article </a>*
 
-<img src = "deepseek_page.png">
+![DeepSeek page on Ollama](./deepseek_page.png)
 
 Copy the command from the website: 
 
@@ -40,11 +40,11 @@ Copy the command from the website:
 
 Open PowerShell and run the command:
 
-<img src = "deepseek_powershell.png">
+![Running DeepSeek in PowerShell](./deepseek_powershell.png)
 
 Once the download is complete, the UI should look like this:
 
-<img src = "deepseek_cli.png">
+![DeepSeek CLI](./deepseek_cli.png)
 
 You will now issue your prompts from the CLI. 
 
@@ -58,23 +58,23 @@ Navigate to this page to <a href = "https://docs.openwebui.com/getting-started/q
 
 Follow the steps:
 
-<img src = "openwebui_steps.png">
+![Open WebUI setup steps](./openwebui_steps.png)
 
 I ran the commands in PowerShell:
 
-<img src = "docker_commands.png">
+![Docker commands in PowerShell](./docker_commands.png)
 
 From your machine, open `Windows Features` and ensure to click the checkbox next to `Virtual Machine Platform`
 
-<img src = "windows_features.png">
+![Windows Features – Virtual Machine Platform](./windows_features.png)
 
 You will then open `Docker Desktop` to verify that the interface is running:
 
-<img src = "docker_verify.png">
+![Docker Desktop running](./docker_verify.png)
 
 From `Docker`, you can launch the UI or open a web browser and type in `localhost:3000/auth`
 
-<img src = "deepseek_ui.png">
+![DeepSeek UI in browser](./deepseek_ui.png)
 
 Congratulations, you are now running DeepSeek r1 locally. Feel free to shut off your NIC to test this out in offline mode.
 

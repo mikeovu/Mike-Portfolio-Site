@@ -12,7 +12,7 @@ In this guide, I will walk you through how I configured Single Sign-On to my Mer
 
 ## High-Level Diagram
 
-<img src="Jumpcloud_meraki_SAML.png">
+![JumpCloud Meraki SAML diagram](./Jumpcloud_meraki_SAML.png)
 
 ---
 This is a simple diagram that illustrates how IdP-initiated SSO works. JumpCloud is the IdP I chose because of their 30 day free trial program and ease of use.

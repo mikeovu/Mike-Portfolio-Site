@@ -4,68 +4,86 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a Hugo static site portfolio for Mike Vu, using the [Blowfish theme](https://blowfish.page/docs/). Content is written in Markdown and deployed to `mikeavuportfolio.com`.
+Mike Vu's portfolio site, built with Astro 4 + Tailwind CSS + MDX, deployed to Azure Static Web Apps at `mikeavuportfolio.com`. All active work is in `astro-site/`. The root-level Hugo files (`content/`, `config/`, `themes/`, `public/`) are the old stack and are no longer deployed.
 
 ## Commands
 
+All commands run from `astro-site/`:
+
 ```bash
-# Start local dev server (hot reload, drafts hidden)
-hugo server
+cd astro-site
 
-# Start local dev server including draft posts
-hugo server -D
-
-# Build the production site to public/
-hugo
-
-# Create a new post (page bundle)
-hugo new posts/post-name/index.md
+npm run dev       # local dev server with hot reload (localhost:4321)
+npm run build     # production build → astro-site/dist/
+npm run preview   # serve the dist/ output locally
 ```
 
-## Configuration
+No lint or test commands are configured.
 
-Configuration is split across `config/_default/` (takes precedence over the root `hugo.toml`):
+## Deployment
 
-- `hugo.toml` — base URL, pagination, taxonomies, output formats
-- `params.toml` — theme behavior (color scheme, layouts, article display options)
-- `menus.en.toml` — navigation menu items
-- `languages.en.toml` — author info (name, image, social links), display name
+Pushing to `main` triggers the GitHub Actions workflow (`.github/workflows/azure-static-web-apps-ambitious-tree-075e10e10.yml`), which runs `npm ci && npm run build` inside `astro-site/`, then uploads `astro-site/dist/` to Azure Static Web Apps. No manual deploy step needed.
 
-The root `hugo.toml` is a minimal fallback; prefer editing files in `config/_default/`.
+## Architecture
 
-## Content Structure
+### Content Collections
 
-Content lives in `content/` as [Hugo page bundles](https://gohugo.io/content-management/page-bundles/):
+Content lives in `astro-site/src/content/` as Astro content collections:
 
-- **Section pages** use `_index.md` (e.g., `content/posts/HTB-AI-Red-Teamer/_index.md`) — these render as list pages
-- **Leaf pages** use `index.md` (e.g., `content/posts/HTB-AI-Red-Teamer/Supervised_Learning_Algorithms/index.md`) — these are individual articles
-- Images are co-located with the post in the same directory and referenced by filename only (e.g., `![alt](image.png)`)
+- `posts/` — blog posts and nested subsections
+- `about/` — the About page content and its co-located images
 
-## Front Matter Conventions
+Schemas are defined in `astro-site/src/content/config.ts`. The key distinction between page types is the `isSection` front matter field:
 
-All posts use YAML front matter (`---` delimiters). Standard fields:
+- **Section pages** (`isSection: true`) — rendered by `SectionLayout`, display a list of direct child posts
+- **Leaf pages** (default) — rendered by `PostLayout`, show article content with TOC sidebar
+
+The slug is the directory path under `src/content/posts/`. Nesting is unlimited (e.g., `ThousandEyes_Learning/Troubleshooting-Labs/Tshoot-Scenario-A`).
+
+### Routing
+
+`astro-site/src/pages/posts/[...slug].astro` handles all post routes via `getStaticPaths`. It fetches the full collection, resolves hero images, computes reading time, and dispatches to `PostLayout` or `SectionLayout` based on `isSection`.
+
+### Hero Images
+
+`astro-site/src/lib/heroImage.ts` auto-discovers hero images: it first checks the `heroImage` front matter field, then falls back to a `feature.{jpg,jpeg,png,svg}` file co-located in the same directory as the post. No explicit declaration is needed if a `feature.*` file is present.
+
+### Layouts
+
+- `Base.astro` — HTML shell, dark mode, global styles
+- `PostLayout.astro` — article view with hero banner, metadata header, prose content, and sticky TOC sidebar
+- `SectionLayout.astro` — section index with hero banner and child post cards
+
+### Styling
+
+Tailwind CSS with `@tailwindcss/typography` (`prose` classes) for markdown rendering. Global overrides in `astro-site/src/styles/global.css`. Config in `astro-site/tailwind.config.mjs`.
+
+## Content Front Matter
+
+### Leaf post (article)
 
 ```yaml
 ---
 title: "Post Title"
 date: 2025-01-01
 draft: false
-author: "Mike Vu"
 description: "Short description"
 tags: [Tag1, Tag2]
 categories: [Guides]
-layout: background      # optional: applies background hero style to the page
 ---
 ```
 
-- `categories` is almost always `[Guides]`
-- `layout: background` enables the full-bleed background hero (used on most posts)
-- Omit `date` if the post doesn't need chronological ordering
+### Section post (index of child pages)
 
-## Theme Customization
+```yaml
+---
+title: "Section Title"
+isSection: true
+tags: [Tag1, Tag2]
+categories: [Guides]
+---
+```
 
-The Blowfish theme lives in `themes/blowfish/` — avoid editing it directly, as it is a third-party dependency. Override layouts by creating matching files in `layouts/` at the root. Custom CSS/JS/images go in `assets/`.
-
-Key layout options (set in `params.toml` or per-page front matter):
-- `heroStyle`: `basic`, `big`, `background`, `thumbAndBackground`
-- `layout` (homepage): `page`, `profile`, `hero`, `card`, `background`, `custom`
+- `draft: true` excludes the post from the build
+- `heroImage` is optional; if absent, a co-located `feature.*` file is used automatically
+- Hugo carry-over fields (`heroStyle`, `showTableOfContents`, etc.) are accepted by the schema but ignored at render time

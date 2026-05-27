@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import Base from '@/layouts/Base.astro';
+import profilePic from '@/assets/mike_vu.png';
 ---
 <Base title="Mike Vu — Solutions Engineer">
   <div class="relative h-screen -mt-14 flex items-center justify-center">
@@ -11,9 +13,11 @@ import Base from '@/layouts/Base.astro';
     <div class="absolute inset-0 bg-black/55"></div>
 
     <div class="relative z-10 flex flex-col items-center text-center text-white px-4">
-      <img
-        src="/images/mike_vu.png"
+      <Image
+        src={profilePic}
         alt="Mike Vu"
+        width={224}
+        height={224}
         class="w-28 h-28 rounded-full object-cover border-4 border-white/40 mb-5 shadow-xl"
       />
       <h1 class="text-4xl sm:text-6xl font-bold mb-3 drop-shadow-lg">Mike Vu</h1>
